@@ -245,7 +245,7 @@
 	</div>
 </div>
 
-<!-- Seccion ANUNCIOS -->
+<!-- Seccion ANUNCIOS
 <section id="anuncios">
 		<div class="container">
 			<div class="col-md-12 col-sm-12 text-center">
@@ -260,7 +260,7 @@
 			</div>
 		</div>
 </section>
-
+-->
 
 <!-- proyectos section -->
 <section id="proyectos">
