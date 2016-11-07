@@ -119,8 +119,7 @@ $(function(){
 // CAMBIO DE IMAGENES EVENTOS
 $("#evAnt").click(function(){
   $("#ant1").removeClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
+  $("#ant2").removeClass("actANTPROX");
   $("#prox3").removeClass("actANTPROX");
   $("#prox4").removeClass("actANTPROX");
   $("#evImg").css("opacity","0");
@@ -131,8 +130,7 @@ $("#evAnt").click(function(){
 
 $("#evPro").click(function(){
   $("#ant1").removeClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
+  $("#ant2").removeClass("actANTPROX");
   $("#prox3").removeClass("actANTPROX");
   $("#prox4").removeClass("actANTPROX");
   $("#evImg").css("opacity","0");
@@ -145,8 +143,7 @@ $("#evPro").click(function(){
 $("#ant1").click(function(){
   $("#evImg").css("opacity","0");
   $("#ant1").addClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
+  $("#ant2").removeClass("actANTPROX");
   $("#prox3").removeClass("actANTPROX");
   $("#prox4").removeClass("actANTPROX");
   $("#btnReg").css("display","none");
@@ -154,40 +151,22 @@ $("#ant1").click(function(){
   setTimeout(function(){ $("#evImg").attr("src","images/ant1.jpg"); setTimeout(function(){ $("#evImg").css("opacity","1");  }, 900); }, 300);
  });
 
+ $("#ant2").click(function(){
+   $("#evImg").css("opacity","0");
+   $("#ant1").removeClass("actANTPROX");
+   $("#ant2").addClass("actANTPROX");
+   $("#prox3").removeClass("actANTPROX");
+   $("#prox4").removeClass("actANTPROX");
+   $("#btnReg").css("display","none");
+   $(".btnEv").html("Ver evento");
+   setTimeout(function(){ $("#evImg").attr("src","images/PG1.jpg"); setTimeout(function(){ $("#evImg").css("opacity","1");  }, 900); }, 300);
+  });
 
-$("#prox1").click(function(){
-  $("#prox1").addClass("actANTPROX");
-  $("#ant1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
-  $("#prox3").removeClass("actANTPROX");
-  $("#prox4").removeClass("actANTPROX");
-  $("#evImg").css("opacity","0");
-  $("#btnReg").css("display","inline");
-  $(".btnEv").html("Ver evento");
-  $("#btnReg").attr("href","eventos.php?Evento=Proximo_1");
-  setTimeout(function(){ $("#evImg").attr("src","images/prox1.jpg"); setTimeout(function(){ $("#evImg").css("opacity","1");  }, 900); }, 300);
-
-
-});
-
-$("#prox2").click(function(){
-  $("#prox2").addClass("actANTPROX");
-  $("#ant1").removeClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox4").removeClass("actANTPROX");
-  $("#evImg").css("opacity","0");
-  $("#btnReg").css("display","inline");
-  $(".btnEv").html("Ver evento");
-  $("#btnReg").attr("href","eventos.php?Evento=Proximo_2");
-  setTimeout(function(){ $("#evImg").attr("src","images/PG1.jpg"); setTimeout(function(){ $("#evImg").css("opacity","1");  }, 900);}, 300);
-
-});
 
 $("#prox3").click(function(){
   $("#prox3").addClass("actANTPROX");
   $("#ant1").removeClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
+  $("#ant2").removeClass("actANTPROX");
   $("#prox4").removeClass("actANTPROX");
   $("#evImg").css("opacity","0");
   $("#btnReg").css("display","inline");
@@ -200,8 +179,7 @@ $("#prox3").click(function(){
 $("#prox4").click(function(){
   $("#prox4").addClass("actANTPROX");
   $("#ant1").removeClass("actANTPROX");
-  $("#prox1").removeClass("actANTPROX");
-  $("#prox2").removeClass("actANTPROX");
+  $("#ant2").removeClass("actANTPROX");
   $("#prox3").removeClass("actANTPROX");
   $("#evImg").css("opacity","0");
   $("#btnReg").css("display","inline");

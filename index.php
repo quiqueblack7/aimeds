@@ -230,9 +230,9 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane" id="ANT">
 						<p id='ant1'>- Foro moviendo tu salud: "Impulsando agentes de cambio"</p>
+						<p id='ant2'>- Curso / Taller : "¿Qué hacer en mi primera guardia?"</p>
 					</div>
 					<div role="tabpanel" class="tab-pane active" id="PROX">
-						<p id='prox2'>- Curso / Taller : "¿Qué hacer en mi primera guardia?"</p>
 						<p id='prox3'>- Curso ENARM (Por anunciarse)</p>
 						<p id='prox4'>- Curso Dopaje (Por anunciarse)</p>
 					</div>
