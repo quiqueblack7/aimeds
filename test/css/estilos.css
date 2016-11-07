@@ -1,0 +1,401 @@
+@font-face { font-family: bariol; src: url(fonts/bariol.ttf); }
+@font-face { font-family: bariolItalic; src: url(fonts/bariolItalic.ttf); }
+@font-face { font-family: bariolSerif; src: url(fonts/bariolSerif.ttf); }
+@font-face { font-family: bariolSerifItalic; src: url(fonts/bariolSerifItalic.ttf); }
+
+body{
+  width: 100%;
+  height: 95%;
+  margin: auto;
+}
+
+#contenido{
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+}
+
+#dLogo{
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 15% auto 0;
+}
+
+#imgAidmeds{ width: 750px; }
+
+#bari{
+  font-family: bariol;
+  font-size: 39px;
+  color: #696868;
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+#clearBoth{ clear: both;}
+
+
+/* NUEVO REGISTRO  */
+.fReg p{
+  font-family: bariol;
+  font-size: 15px;
+  color: #a2a0a0;
+  letter-spacing: 0px;
+  margin: 0;
+}
+.fReg .dCont1 input, .fReg select{
+  width: 162px;
+  height: 25px;
+  font-family: bariol;
+  font-size: 15px;
+  color: #49494a;
+}
+.fReg .dCont2 input, .fReg select{
+  width: 200px;
+  height: 25px;
+  font-family: bariol;
+  font-size: 15px;
+  color: #000000;
+}
+.contReg{
+  width: 860px;
+  margin: 90px auto 0;
+  text-align: center;
+  background: rgba(239,239,239,0.9);
+  height: 545px;
+  border: 1px solid #bdb5b5;
+  box-shadow: 5px 5px 11px grey;
+}
+
+.dCont1 div{ margin: 30px 40px 20px !important;}
+
+.dCont2{ width: 99%; margin: 20px auto 0; height: 60px;}
+.dCont2 div { float: left; margin: 20px 40px; text-align: left;}
+.dCont2-1{margin: 5px auto 0 !important;}
+
+.dBotR{ margin: 20px 346px; float: left; }
+.dBotR input{ width: 160px;font-family: bariol;font-size: 17px; }
+
+#escP2 { display: none;}
+
+.fPEM{ width: 100%; border: 0; height: 69px; }
+.bPEM{ background: transparent; overflow: hidden;}
+.espPEM{    margin-right: -5px !important;}
+#bReg{
+  border: 1px solid #cac3c3;
+  border-radius: 3px;
+  width: 161px;
+  height: 28px;
+  font-size: 18px;
+  font-family: bariol;
+  letter-spacing: 3px;
+  background: #d8dada;
+  font-weight: bold;
+  cursor: pointer;
+  color: #00a6b7;
+  box-shadow: 3px 3px 4px grey;
+  padding: 0px;
+}
+#bReg:active{
+  box-shadow: none;
+  font-size: 16px;
+  padding: 2px;
+  background: #cbcccc;
+}
+.rTittle{
+  width: 100%;
+  font-size: 28px;
+  font-family: bariol;
+  margin: 15px 0 -15px 0;
+  color: #272727;
+}
+.chP{
+  width: 15px !important;
+  height: 15px !important;
+}
+.aPPA{
+  color: #717171 !important;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+#appa{
+  opacity: 0;
+  transition: 0.8s;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border: 10px solid black;
+}
+
+/*FICHA DE PAGO E INSTRUCCIONES*/
+.bodyFicha{
+  width: 100%;
+  height: auto;
+  background-image: url(../images/fondo6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ficha{
+  width: 75%;
+  height: 500px;
+  border: 3px solid;
+  margin: 115px auto;
+  border: 1px solid #adadad;
+  background: rgba(250,250,250,0.85);
+  box-shadow: -3px -3px 10px grey;
+}
+.tFicha{
+  text-align: center;
+  width: 100%;
+  margin: 60px auto 25px;
+  font-family: bariol;
+  font-size: 22px;
+  color: #00a6b7;
+  font-weight: bold;
+  letter-spacing: 1px;;
+}
+.ficha li {
+  font-family: bariol;
+  font-size: 15px;
+  margin: 20px auto;
+  letter-spacing: 1px;
+  color: #3a3a3a;
+}
+.foFicha{
+  font-family: bariol;
+  font-size: 18px;
+  margin: 35px auto;
+  text-align: center;
+  color: #000;
+}
+.bFicha{
+  width: 100%;
+  text-align: center;
+}
+.botFicha{
+  width: 101px;
+  margin: 10px 65px;
+  font-family: bariol;
+  font-size: 15px;
+  cursor: pointer;
+}
+.menuFicha{
+  font-family: bariol;
+  font-size: 39px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  background: #009EAF;
+  position: absolute;
+  top: 0;
+  height: 60px;
+}
+#logoFicha{
+  width: 180px;
+  float: left;
+  margin: -15px 0px 0 7px;
+}
+.ulFicha{
+  width: 85%;
+  margin: 0 auto;
+}
+#hideTittle{
+  font-family: bariol;
+  font-size: 32px;
+  color: #696868;
+  display: none;
+  margin: 35px auto -80px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 970px){
+  .ficha{ width: 80%; }
+  .ulFicha { width: 95%; }
+ }
+
+/*AVISO DE PRIVACIDAD Y POLITICAS DE AFILIACION*/
+#contAP p, #contAP li {
+    font-size: 15px;
+    text-align: justify;
+}
+#tiAP{
+  font-family: bariol;
+  font-size: 30px;
+  margin: -10px auto 15px;
+  text-align: center;
+}
+#taAP tr td{ border: 1px solid black; padding: 25px; font-family: Arial;}
+#taAP tr td:first-child {
+  width: 30%;
+  vertical-align: top;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+#taAP tr td:last-child {
+  width: 70%;
+  font-size: 13px;
+}
+#bAP{
+  width: 100px;
+  font-family: bariol;
+  font-size: 15px;
+  margin: 20px 0 0 30px;
+}
+#pBAP{
+  width: 100%;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+#bPA{
+  width: 100px;
+  font-family: bariol;
+  font-size: 15px;
+  margin: 20px 0 0 30px;
+}
+#conPA{
+  width: 80%;
+  margin: 0 auto;
+}
+#lAct{text-align: center; margin-top: -13px; font-family: arial; font-size: 13px;}
+#conPA p{
+  font-size: 15px;
+  font-family: bariol;
+  text-align: justify;
+}
+.sAPPA{
+  cursor: pointer;
+  color: #030786;
+  text-decoration: underline;
+}
+#tPolAfi { margin: 0 auto; border-collapse:collapse; border: none;}
+#tPolAfi tr td, #tPolAfi tr th{
+  border: 1px solid black;
+  text-align: left;
+  vertical-align: middle;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+
+.bariol{ font-family: bariol;}
+
+/*EVENTOS*/
+#bodyEventos{
+  width: 100%;
+  height: auto;
+  background-image: url(../images/prox1Bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenidoEv{
+  width: 90%;
+  height: auto;
+  margin: 80px auto;
+  font-family: bariol;
+  background: rgba(255,255,255,0.7);
+}
+#prox1 h1{ font-size: 20px;}
+#prox1{ text-align: center;  border: 3px solid;}
+#prox1 #encabezadoP1 { letter-spacing: 1px;}
+#prox1 .tit2{ font-size: 18px; color: #d22323; font-weight: bold;}
+#prox1 p, #prox1 li{ font-size: 15px;}
+#prox1 #encabezadoP1 p { font-size: 17px;}
+.proProx1{ text-align: left; margin: 0 auto; width: 65%;}
+#prox1 li { margin: 6px 0 0 0 ;}
+#imgProx1{ width: 700px; }
+
+/*FORMULARIO DE PROYECTOS*/
+.bodyProy{
+  width: 100%;
+  height: auto;
+  background: #f5e9dc;
+  /*background-image: url(../images/fondo6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+}
+#contProy{
+  width: 900px;
+  border: 2px solid;
+  margin: 100px auto 0;
+  background: #f3f3f3;
+  box-shadow: 12px 10px 9px #949494;
+}
+#contProy .title {
+  text-align: center;
+  font-family: bariol;
+  font-size: 26px;
+  margin: 5px 0 30px 0;
+  letter-spacing: 1px;
+  border-bottom: 2px solid;
+  color: #2d2d2d;
+  font-weight: bold;
+}
+#contProy .subt {
+  margin: 0px 0 20px 35px;
+  font-family: bariol;
+  font-size: 19px;
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  color: #009eaf;
+}
+.rD1{ width: 100%; text-align: center;}
+.rI1{ width: 20%; text-align: center;  margin: 5px 25px 20px 0; }
+.rD2{ width: 100%; text-align: center;}
+.rI2{
+  width: 25%;
+  text-align: center;
+  margin: 0 25px 20px 0;
+  font-family: bariol;
+  font-size: 15px;
+  border: 1px solid #776d6d;
+}
+#contProy .test { width: 100%; margin: 0 0 0 20px; }
+#contProy .test p {
+  float: left;
+  font-size: 15px;
+  font-family: bariol;
+}
+#contProy .test p:first-child {width: 20%; margin: 20px 0px 20px 30px; }
+#contProy .test p:last-child { width: 70%; margin: 20px 0px 20px 30px; }
+#contProy .test #poblacion { width: 70%; margin: 20px 0px 20px 30px; }
+#contProy .i1 { width: 70%; }
+#contProy .i2 { width: 35%; }
+#contProy .text1{ width: 70%;  height: 70px;}
+#contProy input, #contProy textarea, #contProy select {
+  font-family: bariol;
+  font-size: 15px;
+  border: 1px solid #695f5f;
+  text-align: center;
+}
+
+#poblacion div {
+  float: left;
+  width: 21%;
+  margin: 0px 60px 0 26px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+@media print {
+      .botFicha{opacity: 0;}
+      .ficha{ box-shadow: none;  width: 700px; height: 400px; background: rgba(239,239,239,1.0);}
+      .tFicha{ font-size: 18px}
+      #bari{ font-size: 26px;}
+      #contenido{ height: 64%;}
+      .bodyFicha{ background-image: none; }
+      .menuFicha { display: none;}
+      #hideTittle{ display: block;}
+    }
