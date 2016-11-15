@@ -102,3 +102,50 @@
 		background: #de9292;
 	}
 </style>
+
+
+<div id='cuerpo'>
+	<p>
+		Constancias 'Foro Moviendo tu salud 2016'
+	</p>
+	<p>
+		Estimado(a) $nombre1, te pedimos una disculpa por el tiempo que ha tardado la entrega de constancias,
+		pero por cuestiones ajenas a nosotros se retrasó mas de lo esperado.
+	</p>
+	<p>
+		Pero no te preocupes que estamos trabajando en ello y lo mas pronto posible les comunicaremos en donde,
+		como y que día se entregarán.
+	</p>
+	<p>
+		Te enviamos un cordial saludo y una disculpa nuevamente por el retraso de las constancias.
+	</p>
+	<p>
+		Si tienes alguna duda, envía un correo a contacto@aimeds.org<br>
+		Nosotros te responderemos en breve.
+	</p>
+</div>
+<style>
+	#cuerpo{
+		width: 600px;
+		margin: 0 auto;
+		font-family: Bariol;
+		border: 2px solid grey;
+		padding: 20px 40px 40px;
+	}
+	#cuerpo p:nth-child(1){
+	 font-size: 24px;
+	 color: #00a6b7;
+	 text-align: center;
+	 font-weight: bold;
+	 margin-bottom: 40px;
+	}
+	#cuerpo p:nth-child(2){font-size: 17px;}
+	#cuerpo p:nth-child(3){font-size: 17px;}
+	#cuerpo p:nth-child(4){font-size: 17px;}
+	#cuerpo p:nth-child(5){
+		font-size: 19px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 40px;
+	}
+</style>

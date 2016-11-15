@@ -246,4 +246,85 @@ if(isset($_GET['mail3'])){
 }
 
 
+//CORREO FORO MOVIENDO TU SALUD DOBLE ASISTENCIA
+if(isset($_GET['mail4'])){
+  date_default_timezone_set('Etc/UTC');
+  require 'phpMailer/PHPMailerAutoload.php';
+  $sql = "SELECT * FROM registrof WHERE asistio = 3";
+  $res = query($sql);
+  while($cam = mysql_fetch_assoc($res)){
+    foreach ($cam as $var => $val) { echo "$var => $val<br>"; ${$var} = $val; }
+    echo "<br>";
+    $nombre1 = "$nombre $apellidoPaterno $apellidoMaterno";
+    $mensaje = "<div id='cuerpo'>
+      <p>
+        Constancias 'Foro Moviendo tu salud 2016'
+      </p>
+      <p>
+        Estimado(a) $nombre1, te pedimos una disculpa por el tiempo que ha tardado la entrega de constancias,
+        pero por cuestiones ajenas a nosotros se retrasó más de lo esperado.
+      </p>
+      <p>
+        Pero no te preocupes que estamos trabajando en ello y lo más pronto posible les comunicaremos en dónde,
+        cómo y qué día se entregarán.
+      </p>
+      <p>
+        Te enviamos un cordial saludo y una disculpa nuevamente por el retraso de las constancias.
+      </p>
+      <p>
+        Si tienes alguna duda, envía un correo a contacto@aimeds.org<br>
+        Nosotros te responderemos en breve.
+      </p>
+    </div>
+    <style>
+      #cuerpo{
+        width: 600px;
+        margin: 0 auto;
+        font-family: Bariol;
+        border: 2px solid grey;
+        padding: 20px 40px 40px;
+      }
+      #cuerpo p:nth-child(1){
+       font-size: 24px;
+       color: #00a6b7;
+       text-align: center;
+       font-weight: bold;
+       margin-bottom: 40px;
+      }
+      #cuerpo p:nth-child(2){font-size: 17px;}
+      #cuerpo p:nth-child(3){font-size: 17px;}
+      #cuerpo p:nth-child(4){font-size: 17px;}
+      #cuerpo p:nth-child(5){
+        font-size: 19px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+      }
+    </style>
+    ";
+    $mail = new PHPMailer;
+    //$mail->isSMTP();
+    $mail->SMTPDebug = 2;
+    $mail->Debugoutput = 'html';
+    $mail->CharSet = 'UTF-8';
+    $mail->Host = 'aimeds.org';
+    $mail->Port = 25;
+    $mail->SMTPOptions = array('ssl' => array('verify_peer' => true,'verify_peer_name' => false,'allow_self_signed' => true));
+    $mail->SMTPSecure = 'none';
+    $mail->SMTPAuth = true;
+    $mail->Username = "contacto@aimeds.org";
+    $mail->Password = "Con2016_2";
+    $mail->setFrom('contacto@aimeds.org', 'Contacto AIMEDS');
+    //$mail->addReplyTo($correo, $nombre);
+    $mail->Subject = 'Constancias foro moviendo tu salud 2016';
+    $mail->msgHTML($mensaje, dirname(__FILE__));
+    $mail->AltBody = $mensaje;
+    //$mail->addAttachment('images/phpmailer_mini.png');
+    $mail->addAddress("$correo", "$nombre1");
+    if ($mail->send()) { echo "ENVIADO $correo<br><br>";  }
+    else{ echo "NO ENVIADO $correo<br><br>";   }
+  }
+}
+
+
 ?>
